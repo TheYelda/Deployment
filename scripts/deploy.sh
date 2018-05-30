@@ -8,12 +8,13 @@ photosDir='/public/home/yanzexin/yelda/photos/'
 medicalImgaesDir='/public/home/yanzexin/yelda/medical-images/'
 serverDir='/public/home/yanzexin/yelda/server/'
 
-appDir='/public/home/yanzexin/AppServer/server/'
+appFiles='/public/home/yanzexin/AppServer/server/.'
 clientDir='/public/home/yanzexin/AppClient/static/'
 
 echo -n 'Initializing directories...'
 if [ -d ${wwwDir} ]; then
     rm -r ${wwwDir}
+    mkdir ${wwwDir}
 fi
 if [ ! -d ${logDir} ]; then
     mkdir ${logDir}
@@ -27,8 +28,7 @@ fi
 echo 'Done'
 
 echo -n 'Copying files ...'
-cp -r ${appDir} ${yeldaDir}
-mv ${serverDir} ${wwwDir}
+cp -r ${appFiles} ${wwwDir}
 cp -r ${clientDir} ${wwwDir}
 echo 'Done'
 
