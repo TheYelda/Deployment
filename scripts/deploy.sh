@@ -1,15 +1,15 @@
 #! /bin/bash
 
-yeldaDir='/public/home/yanzexin/yelda/'
+yeldaDir='/root_path/yelda/'
 
-wwwDir='/public/home/yanzexin/yelda/www/'
-logDir='/public/home/yanzexin/yelda/log/'
-photosDir='/public/home/yanzexin/yelda/photos/'
-medicalImgaesDir='/public/home/yanzexin/yelda/medical-images/'
-serverDir='/public/home/yanzexin/yelda/server/'
+wwwDir='/root_path/yelda/www/'
+logDir='/root_path/yelda/log/'
+photosDir='/root_path/yelda/photos/'
+medicalImgaesDir='/root_path/yelda/medical-images/'
+serverDir='/root_path/yelda/server/'
 
-appFiles='/public/home/yanzexin/AppServer/server/.'
-clientDir='/public/home/yanzexin/AppClient/static/'
+appFiles='/root_path/AppServer/server/.'
+clientDir='/root_path/AppClient/static/'
 
 echo -n 'Initializing directories...'
 if [ -d ${wwwDir} ]; then
