@@ -1,19 +1,19 @@
 #! /bin/bash
 
-yeldaDir='/home/ace/yelda/'
+yeldaDir='/root_path/yelda/'
 serverUrl='https://github.com/TheYelda/AppServer.git'
 staticUrl='https://github.com/TheYelda/AppClient/releases/download/1.0.7/dist.zip'
-serverGit='/home/ace/AppServer/'
+serverGit='/root_path/AppServer/'
 
-wwwDir='/home/ace/yelda/www/'
-logDir='/home/ace/yelda/log/'
-photosDir='/home/ace/yelda/photos/'
-medicalImgaesDir='/home/ace/yelda/medical-images/'
-staticDir='/home/ace/yelda/www/static/'
+wwwDir='/root_path/yelda/www/'
+logDir='/root_path/yelda/log/'
+photosDir='/root_path/yelda/photos/'
+medicalImgaesDir='/root_path/yelda/medical-images/'
+staticDir='/root_path/yelda/www/static/'
 
-zipFile='/home/ace/yelda/www/static/dist.zip'
-distFiles='/home/ace/yelda/www/static/dist/.'
-appFiles='/home/ace/AppServer/server/.'
+zipFile='/root_path/yelda/www/static/dist.zip'
+distFiles='/root_path/yelda/www/static/dist/.'
+appFiles='/root_path/AppServer/server/.'
 
 echo -n 'Initializing directories...'
 if [ -d ${wwwDir} ]; then
