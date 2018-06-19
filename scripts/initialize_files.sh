@@ -2,7 +2,7 @@
 
 yeldaDir='/root_path/yelda/'
 serverUrl='https://github.com/TheYelda/AppServer.git'
-staticUrl='https://github.com/TheYelda/AppClient/releases/download/1.0.7/dist.zip'
+staticUrl='https://github.com/TheYelda/AppClient/releases/download/1.1.5/dist.zip'
 serverGit='/root_path/AppServer/'
 
 wwwDir='/root_path/yelda/www/'
