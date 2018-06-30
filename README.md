@@ -55,6 +55,3 @@ $ git clone https://github.com/TheYelda/Deployment.git
 $ sudo docker-compose up -d
 ```
 
-
-
-
