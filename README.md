@@ -9,6 +9,12 @@
 $ git clone https://github.com/TheYelda/Deployment.git
 ```
 
+### Installation
+
+[Docker安装](https://ace-0.github.io/2018/04/13/docker-learning/)
+
+[Docker-Compose安装](https://ace-0.github.io/2018/06/25/docker-compose-learning/#more)
+
 ### Configure
 
 将前端文件放在`my-nginx/dist/`下，后端代码放在`my-app/server/`下。目录结构：
