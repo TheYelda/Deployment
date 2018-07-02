@@ -1,8 +1,8 @@
 version: '3'
 services:
   
-  server:
-    image: jarvisw/yelda_server:v1
+  frontend:
+    image: 15331335/yelda_app:v1
 
     volumes:
       - ./conf.d/:/etc/nginx/conf.d
@@ -10,7 +10,7 @@ services:
     ports:
       - "8080:8080"
 
-  webapp:
+  backend:
     image: jarvisw/yelda_webapp:v1
 
     volumes:
@@ -30,4 +30,3 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=123
       - MYSQL_DATABASE=yelda
-      # - "DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"

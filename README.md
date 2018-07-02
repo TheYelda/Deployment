@@ -26,7 +26,7 @@ $ git clone https://github.com/TheYelda/Deployment.git
    在`./conf.d/yelda.conf`的第**2**行中，使用本机IP替代`127.0.0.1`：
 
    ```shell
-   set $myhost 127.0.0.1;
+   set $myhost x.x.x.x;
    ```
 
 2. 配置数据库连接：
@@ -34,7 +34,7 @@ $ git clone https://github.com/TheYelda/Deployment.git
    在`./instance/config.py`第**1**行，使用本机IP替代`127.0.0.1`：
 
    ```shell
-   DB_HOST = '172.19.93.38'
+   DB_HOST = 'x.x.x.x'
    ```
 
 ### Run
