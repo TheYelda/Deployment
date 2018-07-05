@@ -21,21 +21,41 @@ $ git clone https://github.com/TheYelda/Deployment.git
 
 ### Configure
 
-1. 配置`Nginx`转发：
+1. 
+
+2. 配置`Nginx`转发：
 
    在`./conf.d/yelda.conf`的第**2**行中，使用本机IP替代`127.0.0.1`：
 
-   ```shell
+   ```python
    set $myhost x.x.x.x;
    ```
 
-2. 配置数据库连接：
+3. 配置后端程序：
 
-   在`./instance/config.py`第**1**行，使用本机IP替代`127.0.0.1`：
+   在`./instance/config.py`中，修改配置
 
-   ```shell
-   DB_HOST = 'x.x.x.x'
-   ```
+   - 使用本机IP替代`127.0.0.1`：
+
+     ```python
+     DB_HOST = 'x.x.x.x'
+     ```
+
+   - 创建目录，分别存放用户头像和医学影像图片，在配置文件的`PHOTOS_FOLDER `和`MEDICAL_IMAGES_FOLDER  `中配置。
+
+     ```python
+     PHOTOS_FOLDER = 'yelda/photos'
+     MEDICAL_IMAGES_FOLDER = 'yelda/medical-images'
+     ```
+
+   - 配置会话管理密钥（可选）：
+
+     修改`instance/config.py`的`SECRET_KEY  `字段即可。
+
+   - 配置初始管理员账号密码：
+
+     配置`ADMIN_USERNAME`和`ADMIN_PASSWORD `字段。
+
 
 ### Run
 
